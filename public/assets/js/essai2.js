@@ -1,6 +1,5 @@
 /* eslint-disable no-use-before-define */
 /* eslint-disable linebreak-style */
-
 // declare all state variables here
 const console = document.getElementById('console');
 const canvas = document.getElementById('canvas');
@@ -10,6 +9,7 @@ let typeMode = false;
 let drawMode = true;
 let eraseMode = false;
 let shapeMode = false;
+let frameRate;
 
 let color = 'black';
 let lineThickness = 2;
@@ -330,7 +330,7 @@ canvas.width = window.outerWidth - 150;
 canvas.height = window.outerHeight - 300;
 
 var imagesToLoad = 0;
-let frameRate;
+
 const imageLoader = document.getElementById('imageLoader');
 imageLoader.addEventListener('change', handleImage, false);
 
@@ -345,9 +345,3 @@ function handleImageUpload() {
 
   reader.readAsDataURL(image);
 }
-
-// function toto()
-// {
-// 	display - image.style.marginLeft = window.innerWidth - 240 + "px";
-// 	display - image.style.marginTop = window.innerHeight - 240 + "px";
-// }
