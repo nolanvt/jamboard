@@ -1,0 +1,172 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:400,700);
+
+body {
+background-color: #D9D7E3;
+}
+
+* {
+  font-family: 'Dosis';
+}
+
+h1 {
+  color: #00796B;
+  text-transform: uppercase;
+  font-size: 35px;
+  position: relative;
+  left: 0px;
+}
+
+#clearCanvas {
+  float: right;
+  position: relative;
+  right: -130px;
+  bottom: 40px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+canvas {
+  background: #fff;
+  display: block;
+  margin: 60px auto;
+  margin-left: 20%;
+  border-radius: 10px;
+  border: 2px solid #9e9e9e;
+  border-top: 3px solid #757575;
+  box-shadow: 0 4px 0 2px #8D6E63;
+  cursor: crosshair;
+}
+
+.controls {
+  margin: 0 auto;
+  width: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: -15px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  width: 100%;
+  float: left;
+  text-align: center;
+  padding: 10px 0 20px;
+}
+ul li, #newColor {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 15px 40px;
+  border: 1px solid #9e9e9e;
+  box-shadow: 0 0 4px #9e9e9e;
+  cursor: pointer;
+}
+
+ul li {
+  display: inline-block;
+  margin: 0 10px 10px;
+}
+
+.red {
+  background: #D50000;
+}
+
+.blue {
+  background: #2962FF;
+}
+
+.green {
+  background: #1B5E20;
+}
+
+.selected {
+  border: 5px solid #000;
+}
+
+button {
+  background: #00897B;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
+  color: #fff;
+ 
+}
+
+button:hover {
+  background: #0288D1;
+}
+
+#showSelectColor {
+  border: none;
+  border-radius: 10px;
+  margin: 10px auto;
+  width: 300px;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+/* add some new colors */
+#colorSelect {
+  background: #fff;
+  border: 2px solid #00897B;
+  border-radius: 15px;
+  position: relative;
+  margin: 15px auto;
+  padding: 10px;
+  display: none ;
+}
+
+#colorSelect:after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-bottom-color: #fff;
+  border-width: 10px;
+}
+
+#newColor {
+  width: 60px; 
+  height: 60px;
+  border: none;
+  border-radius: 50px;
+  float: left;
+  margin: 10px 20px 10px 20px;
+}
+
+.slides p {
+  margin: 10px 0;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+.slides label {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 50px;
+  color: #000;
+}
+
+.slides input {
+  position: relative;
+  top: 4px;
+  width: 40%;
+}
+
+#colorSelect button {
+  border: none;
+  border-top: 1px solid #9e9e9e;
+  clear: both;
+  padding: 10px 10px;
+  width: 250px;
+  margin-top: 20px;
+  cursor: pointer;
+}
