@@ -10,6 +10,7 @@ let drawMode = true;
 let eraseMode = false;
 let shapeMode = false;
 let frameRate;
+let imagesToLoad;
 
 let color = 'black';
 let lineThickness = 2;
@@ -329,19 +330,4 @@ canvas.addEventListener('touchmove', touchMoveEvent, false);
 canvas.width = window.outerWidth - 150;
 canvas.height = window.outerHeight - 300;
 
-var imagesToLoad = 0;
 
-const imageLoader = document.getElementById('imageLoader');
-imageLoader.addEventListener('change', handleImage, false);
-
-function handleImageUpload() {
-  const image = document.getElementById('upload').files[0];
-
-  const reader = new FileReader();
-
-  reader.onload = function (e) {
-    document.getElementById('display-image').src = e.target.result;
-  };
-
-  reader.readAsDataURL(image);
-}

@@ -70,3 +70,25 @@ li.dropdown {
 .input-file {
     display: none;
 }
+
+.img-cntnr {
+  position: relative;
+  border: dodgerBlue solid 20px;
+
+  overflow: hidden;
+  margin-top: 150px;
+}
+
+.img-cntnr img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: -webkit-grab;
+}
+.my-img{
+   width: 50%;
+  height: 50%;
+}
